@@ -1,0 +1,122 @@
+
+body, html{
+	height: auto;
+	margin: 0px;
+}
+
+#bg{
+	height: auto;
+	position: relative;
+	background-image: url("./resources/bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#content{
+	display: flex;
+	flex-direction: column;
+}
+
+#portrait{
+	background-color: rgba(100, 000, 000, 1);
+	width: auto;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+#portrait img{
+	width: 150px;
+	height: auto;
+	border: solid 16px rgba(100, 000, 000, 1);
+	border-radius: 100px;
+	background: white;
+	overflow: hidden;
+	margin-top: -90px;
+}
+
+#div1{
+	border: solid 4px pink;
+	width: auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#div1 div
+{
+	text-align: center;
+	overflow: hidden;
+	border: dashed 1px red;
+}
+
+#div1 p{
+	margin: 0px;
+	padding: 0px;
+}
+
+#div1 h2{
+	margin: 0px;
+	padding: 0px;
+}
+
+#div2{
+	width: 23%;
+	background-color: rgba(171, 022, 246, 0.8);
+}
+
+#div3{
+	width: 50%;
+	background-color: rgba(255, 111, 105, 0.8);
+}
+
+#para_form{
+
+	height: 100px;
+}
+
+#div4{
+	width: 23%;
+	background-color: rgba(000, 255, 187, 0.8);;
+}
+
+@media (max-width:800px){
+
+	#bg{
+		height: auto;
+	}
+
+	#div1{
+		flex-direction: column;
+		justify-content: normal;
+	}
+
+	#div1 div{
+		margin: 20px 10px 20px 10px;
+	}
+
+	#div2{
+		width: auto;
+	}
+
+	#div3{
+		width: auto;
+	}
+
+	#div4{
+		width: auto;
+	}
+}
+
+H2{
+	font-size: 4vmin;
+}
+
+#hob{
+}
+
+#hob img{
+	width: 80%;
+}
