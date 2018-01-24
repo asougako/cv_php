@@ -3,7 +3,7 @@
 <HTML lang="fr">
 	<HEAD>
 		<meta charset="UTF-8">
-		<link type="text/css" rel="stylesheet" href="./style.css">
+		<link type="text/css" rel="stylesheet" href="style.css">
 		<script src="./resp.js"></script>
 	</HEAD>
 	<BODY>
@@ -14,8 +14,10 @@
 				</div>
 				<div id="div1">
 					<div id="div2">
-						<H2 onclick="myFunction('para_info')">Infos perso</H2>
+						<H2 onclick="myFunction2('para_info')">Infos perso</H2>
 						<p id="para_info"><?php $para='info'; include 'lorem_ipsum.php';?></p>
+						<H2 onclick="myFunction2('para_info2')">Infos perso</H2>
+						<p id="para_info2"><?php $para='info'; include 'lorem_ipsum.php';?></p>
 					</div>
 					<div id="div3">
 						<div id="comp">
@@ -32,24 +34,33 @@
 						</div>
 						<div id="hob">
 							<H2 onclick="myFunction('hob_img')">Hobbits</H2>
-							<img id="hob_img" src="./resources/hobbits.jpeg" title="Hobbit" alt="Hobbit" />
+							<img id="hob_img" src="resources/hobbits.jpeg" title="Hobbit" alt="Hobbit" />
 						</div>
 					</div>
 					<div id="div4">
 						<H2>Projets</H2>
-						<p><a href="">ft_ls</a></p>
-						<p><a href="">ft_printf</a></p>
-						<p><a href="">push_swap</a></p>
-						<p><a href="">ft_projet</a></p>
-						<p><a href="">ft_projet</a></p>
+						<ul>
+							<li><a href="">EOE		</a></li>
+							<li><a href="">IVL-2	</a></li>
+							<li><a href="">ft_ls	</a></li>
+							<li><a href="">ft_printf</a></li>
+							<li><a href="">push_swap</a></li>
+						</ul>
+						<H2>Projets</H2>
+						<ul>
+							<li id="but">Click me!</li>
+							<ul id="projects">
+								<li>EOE</li>
+								<li>IVL-2</li>
+								<li>ft_ls</li>
+								<li>ft_printf</li>
+								<li>push_swap</li>
+							</ul>
+						</ul>
 					</div>
 				</div><!--portrait-->
 			</div><!--content-->
 		</div><!--bg-->
 	</BODY>
 </HTML>
-
-
-
-
 

@@ -22,6 +22,34 @@ function myFunction(id) {
 	}
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+	var ul = document.getElementById('projects');
+	var li = ul.getElementsByTagName('li');
+	for (i=0; i < li.length; i++) {
+		li[i].onclick = function() {
+			document.getElementById('but').innerHTML = this.innerHTML;
+			ul.style.display = 'none';
+		}
+	}
+	var but = document.getElementById('but');
+	but.onclick = function() {
+		if (ul.style.display === 'block') {
+			ul.style.display = 'none';
+		}
+		else {
+			ul.style.display = 'block';
+		}
+	};
+});
+
+function myFunction2(id){
+	var element = document.getElementById(id);
+	element.animate({
+		opacity: [1, 0]},
+		1000);
+
+}
+
 function nanification(id){
 	var h = document.getElementById(id).clientHeight;
 	var timer = setInterval(function(){

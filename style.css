@@ -31,13 +31,36 @@ body, html{
 	width: 150px;
 	height: auto;
 	border: solid 16px rgba(100, 000, 000, 1);
-	border-radius: 100px;
+	border-radius: 90px;
 	background: white;
 	overflow: hidden;
 	margin-top: -90px;
 	animation:spin 60s linear infinite;
 }
+
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#para_info{
+	color: red;
+	overflow: hidden;
+}
+
+@keyframes hide_para {
+	0% {
+		transform: translateY(-100%);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-100%);
+		opacity: 1;
+	}
+}
+
+
 #div1{
 	border: solid 4px pink;
 	width: auto;
@@ -51,6 +74,7 @@ body, html{
 	text-align: center;
 	overflow: hidden;
 	border: dashed 1px red;
+	height: auto;
 }
 
 #div1 p{
@@ -121,3 +145,36 @@ H2{
 #hob img{
 	width: 80%;
 }
+
+
+ul{
+	list-style: none;
+	padding: 0;
+	border: solid 2px black;
+	width: auto;
+	text-align: left;
+}
+
+#projects{
+	display: none;
+	background-color: orange;
+}
+
+#but{
+	background-color: red;
+	width: auto;
+	animation: rainbow 0.3s infinite;
+
+}
+
+@keyframes rainbow {
+	  0% {background-color: red;}
+	 16% {background-color: orange;}
+	 33% {background-color: yellow;}
+	 50% {background-color: green;}
+	 66% {background-color: blue;}
+	 83% {background-color: purple;}
+	100% {background-color: red;}
+}
+
+
