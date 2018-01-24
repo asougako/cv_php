@@ -35,8 +35,9 @@ body, html{
 	background: white;
 	overflow: hidden;
 	margin-top: -90px;
+	animation:spin 60s linear infinite;
 }
-
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 #div1{
 	border: solid 4px pink;
 	width: auto;
