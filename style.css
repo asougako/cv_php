@@ -1,11 +1,9 @@
 
 body, html{
-	height: auto;
 	margin: 0px;
 }
 
-#bg{
-	height: auto;
+html{
 	position: relative;
 	background-image: url("./resources/bg.jpg");
 	background-position: center;
@@ -163,17 +161,17 @@ ul{
 #but{
 	background-color: red;
 	width: auto;
-	animation: rainbow 0.3s infinite;
+	animation: rainbow 1.5s infinite;
 
 }
 
 @keyframes rainbow {
 	  0% {background-color: red;}
-	 16% {background-color: orange;}
-	 33% {background-color: yellow;}
-	 50% {background-color: green;}
-	 66% {background-color: blue;}
-	 83% {background-color: purple;}
+	 10% {background-color: orange;}
+	 30% {background-color: yellow;}
+	 40% {background-color: green;}
+	 70% {background-color: blue;}
+	 80% {background-color: purple;}
 	100% {background-color: red;}
 }
 
