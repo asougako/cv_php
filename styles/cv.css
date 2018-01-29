@@ -9,10 +9,11 @@ html{
 }
 
 /* Image de fond */
+/*
 #content:before {
 	background-image: url(../resources/bg.jpg);
 	content: "";
-	position: fixed;
+	//position: fixed;
 	left: 0;
 	right: 0;
 	z-index: -1;
@@ -27,7 +28,7 @@ html{
 	-o-filter: blur(5px);
 	-ms-filter: blur(5px);
 	filter: blur(4px);
-}
+}*/
 
 /* Bouton Telechargement CV */
 #DL_PDF {
@@ -86,4 +87,54 @@ html{
 #content{
 	display: flex;
 	flex-direction: column;
+}
+
+#slide1 {
+	background: url(../resources/velvet-crowe.jpg) center 0 no-repeat fixed;
+}
+#slide2 {
+	background: url(../resources/ruby_rwby.jpg) center 0 no-repeat fixed;
+}
+#slide3 {
+	background: url(../resources/kaguya_ootsutsuki.jpg) center 0 no-repeat fixed;
+}
+
+.h2 {
+	font-size: 2em;
+	font-weight:bold;
+	color: #b7db44;
+}
+
+a {
+	font-weight:bold;
+	color:#fff;
+}
+
+
+/* Mise en place des diffÃ©rentes parties / slides */
+#slide1, #slide2, #slide3 {
+	height: 1500px;
+	padding-top:100px;
+}
+
+
+/* Gestion du contenu */
+.slide_inside {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#slide1  .slide_inside {
+	text-align:center;
+}
+
+#slide2 .slide_inside p {
+	width: 500px;
+	text-align:justify;
+}
+
+#slide3 .slide_inside {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top:50px;
+	padding:50px;
 }
