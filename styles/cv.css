@@ -1,0 +1,89 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+/* Image de fond */
+#content:before {
+	background-image: url(../resources/bg.jpg);
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(4px);
+}
+
+/* Bouton Telechargement CV */
+#DL_PDF {
+	width: 150px;
+	height: 50px;
+	border: 2px solid black;
+	background-color: transparent;
+	color: black;
+	position: fixed;
+	right: 15px;
+	top: 15px;
+}
+
+#elevator {
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white;
+	overflow: hidden;
+	position: fixed;
+	right: 5px;
+	top: 50%
+}
+
+#elevator_img {
+	width: 62px;
+	height: auto;
+	position: relative;
+	top: -6px;
+	left: -6px;
+}
+
+#author {
+	text-align: center;
+	background-color: cadetblue;
+	padding: 0;
+	margin: 0;
+}
+
+#author .author-name {
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+#author .author-separator {
+	width: 40%;
+
+}
+
+#author .author-job {
+	font-size: 20px;
+}
+
+
+#content{
+	display: flex;
+	flex-direction: column;
+}
