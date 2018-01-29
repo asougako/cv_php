@@ -3,10 +3,14 @@
 <HTML lang="fr">
 	<HEAD>
 		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" src="http://piq.codeus.net/static/media/userpics/piq_261595_400x400.png">
 		<link type="text/css" rel="stylesheet" href="style.css">
 		<script src="./resp.js"></script>
 	</HEAD>
 	<BODY>
+
+
+			<a id="top" href="#bot">TO BOTTOM</a>
 		<div id="bg">
 			<div id="content">
 				<div id="portrait">
@@ -61,6 +65,9 @@
 				</div><!--portrait-->
 			</div><!--content-->
 		</div><!--bg-->
+		<nav>
+		<a id="bot" href="#top">TO TOP</a>
+		</nav>
 	</BODY>
 </HTML>
 

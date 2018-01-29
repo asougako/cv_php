@@ -175,4 +175,16 @@ ul{
 	100% {background-color: red;}
 }
 
+a {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	background-color: cyan;
+	border: solid 4px black;
+	color: pink;
+}
 
+BODY{
+	scroll-behavior: smooth;
+}
